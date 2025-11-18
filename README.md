@@ -11,4 +11,5 @@
     <li>Parece que ahora todo bien, sigue estando una medium y varias low pero se ha solucionado la high que se pedía</li>
     <li>Se añaden en el yaml del workflow para subir SBOM al git</li>
     <li>El nuevo step da un error e indica que hay que hacer git config del emial y usuario, se prueba de nuevo</li>
+    <li>Vuelve a dar error, ahora se indica que el workflow no tiene permiso de escritura en el git. Desde settings >> actions del repo, se concede permiso de escritura al workflow</li>
 </ul>
