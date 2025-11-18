@@ -63,6 +63,8 @@ jobs:
       # Subir el archivo sbom.syft.json generado al main.
       - name: Subir SBOM al git
         run: |
+          git config --global user.email "eligio@eligio.es"
+          git config --global user.name "Eligio Morgado"
           git add sbom.syft.json
           git commit -m "actualizado SBOM"
           git push
