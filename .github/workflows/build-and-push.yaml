@@ -60,4 +60,10 @@ jobs:
               --fail-on high \
               --only-fixed=false \
               --add-cpes-if-none
+      # Subir el archivo sbom.syft.json generado al main.
+      - name: Subir SBOM al git
+        run: |
+          git add sbom.syft.json
+          git commit -m "actualizado SBOM"
+          git push
 
